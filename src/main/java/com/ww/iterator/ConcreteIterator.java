@@ -5,10 +5,10 @@ import java.util.List;
 
 public class ConcreteIterator implements Iterator {
 
-    private List list = new ArrayList();
+    private List<Object> list = new ArrayList<>();
     private int cursor = 0;
 
-    public ConcreteIterator(List list) {
+    public ConcreteIterator(List<Object> list) {
         this.list = list;
     }
 

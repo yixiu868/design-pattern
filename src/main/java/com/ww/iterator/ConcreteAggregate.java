@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ConcreteAggregate implements Aggregate {
 
-    private List list = new ArrayList();
+    private List<Object> list = new ArrayList<>();
 
     @Override
     public void add(Object obj) {

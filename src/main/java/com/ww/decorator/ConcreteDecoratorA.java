@@ -2,6 +2,7 @@ package com.ww.decorator;
 
 public class ConcreteDecoratorA extends Decorator {
 
+    @SuppressWarnings("unused")
     private String addedState;
 
     @Override

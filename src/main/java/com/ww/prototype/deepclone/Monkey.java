@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Monkey implements Cloneable, Serializable {
 
+    private static final long serialVersionUID = -1271203688696894514L;
     //身高
     private int height;
     //体重
@@ -21,6 +22,7 @@ public class Monkey implements Cloneable, Serializable {
         staff = new GoldRingedStaff();
     }
 
+    @SuppressWarnings("finally")
     @Override
     protected Object clone() {
         Monkey temp = null;
