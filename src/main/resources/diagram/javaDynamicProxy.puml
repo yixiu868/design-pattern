@@ -1,0 +1,19 @@
+@startuml
+interface InvocationHandler
+InvocationHandler : invoke
+
+interface Subject
+Subject : request
+
+InvocationHandler <|.. ProxyInvHand
+ProxyInvHand : invoke
+
+Subject <|.. RealSubject
+RealSubject : request
+
+Subject <|.. Proxy
+Proxy : request
+
+Proxy -> ProxyInvHand
+ProxyInvHand -> RealSubject
+@enduml

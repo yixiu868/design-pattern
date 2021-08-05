@@ -1,0 +1,17 @@
+@startuml
+
+interface Target
+Target : request()
+
+Target <|.. Adapter
+Adapter : request()
+
+class Adaptee
+Adaptee : specificRequest()
+
+Adapter -> Adaptee : -adaptee
+
+class Client
+Client -> Target : -target
+
+@enduml

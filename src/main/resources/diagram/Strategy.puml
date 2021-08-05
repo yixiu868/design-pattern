@@ -1,0 +1,27 @@
+@startuml
+interface Strategy {
+  +AlgorithmInterface()
+}
+
+class ConcreteStrategyA {
+  +AlgorithmInterface()
+}
+
+class ConcreteStrategyB {
+  +AlgorithmInterface()
+}
+
+class ConcreteStrategyC {
+  +AlgorithmInterface()
+}
+
+Strategy <|.. ConcreteStrategyA
+Strategy <|.. ConcreteStrategyB
+Strategy <|.. ConcreteStrategyC
+
+class Context {
+  +ContextInterface()
+}
+
+Context o-> Strategy
+@enduml

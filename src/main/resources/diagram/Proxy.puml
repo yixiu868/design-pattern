@@ -1,0 +1,24 @@
+@startuml
+
+interface ISubject
+ISubject : Function1
+ISubject : Function2
+
+ISubject <|.. RealSubject
+RealSubject : Function1
+RealSubject : Function2
+
+ISubject <|.. Proxy
+
+class Proxy {
+  realSubject : RealSubject
+  Function1()
+  Function2()
+}
+
+Proxy -> RealSubject
+
+Program ..> Proxy
+Program ..> ISubject
+
+@enduml

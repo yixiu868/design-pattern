@@ -1,0 +1,72 @@
+@startuml
+
+interface Fruit {
+    +void get();
+}
+interface FruitFactory {
+    +Fruit getApple();
+    +Fruit getBanana();
+}
+
+abstract Apple {
+    +{abstract} void get();
+}
+abstract Banana {
+    +{abstract} void get();
+}
+
+class InnerApple {
+    +void get();
+}
+class NorthApple {
+    +void get();
+}
+class SouthApple {
+    +void get();
+}
+
+class InnerBanana {
+    +void get();
+}
+class NorthBanana {
+    +void get();
+}
+class SouthBanana {
+    +void get();
+}
+
+class InnerFruitFactory {
+    +Fruit getApple();
+    +Fruit getBanana();
+}
+class NorthFruitFactory {
+    +Fruit getApple();
+    +Fruit getBanana();
+}
+class SouthFruitFactory {
+    +Fruit getApple();
+    +Fruit getBanana();
+}
+
+FruitFactory <|.. InnerFruitFactory
+FruitFactory <|.. NorthFruitFactory
+FruitFactory <|.. SouthFruitFactory
+
+Fruit <|.. Apple
+Fruit <|.. Banana
+Apple <|-- InnerApple
+Apple <|-- NorthApple
+Apple <|-- SouthApple
+Banana <|-- InnerBanana
+Banana <|-- NorthBanana
+Banana <|-- SouthBanana
+
+Fruit <.. FruitFactory
+InnerApple <.. InnerFruitFactory
+InnerBanana <.. InnerFruitFactory
+NorthApple <.. NorthFruitFactory
+NorthBanana <.. NorthFruitFactory
+SouthApple <.. SouthFruitFactory
+SouthBanana <.. SouthFruitFactory
+
+@enduml

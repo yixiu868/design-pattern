@@ -1,0 +1,18 @@
+@startuml
+
+interface Shape {
+    +void display();
+}
+class Circle {
+    +void display();
+}
+class Rectangle {
+    +void display();
+}
+
+Shape <|.. Circle
+Shape <|.. Rectangle
+
+Shape <.. Test
+
+@enduml
