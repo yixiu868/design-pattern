@@ -1,9 +1,9 @@
 package com.ww.factory.simple;
 
 /**
- * @Description TODO
- * @Author wanggw
- * @Date 2020/5/13 10:42
+ * @Description: 简单工厂方法
+ * @author xiaohua
+ * @date 2021年8月5日 下午4:29:20
  */
 public class SimpleFactory {
 

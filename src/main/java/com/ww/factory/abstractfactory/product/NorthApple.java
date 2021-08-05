@@ -1,7 +1,7 @@
-package com.ww.factory.abstractfactory;
+package com.ww.factory.abstractfactory.product;
 
 /**
- * @Description TODO
+ * @Description 北方苹果：具体产品
  * @Author wanggw
  * @Date 2020/5/18 10:46
  */

@@ -1,7 +1,11 @@
-package com.ww.factory.abstractfactory;
+package com.ww.factory.abstractfactory.factory;
+
+import com.ww.factory.abstractfactory.product.Fruit;
+import com.ww.factory.abstractfactory.product.SouthApple;
+import com.ww.factory.abstractfactory.product.SouthBanana;
 
 /**
- * @Description TODO
+ * @Description 南方水果种植基地：具体工厂
  * @Author wanggw
  * @Date 2020/5/18 10:50
  */

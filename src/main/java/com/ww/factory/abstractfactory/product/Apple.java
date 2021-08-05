@@ -1,7 +1,7 @@
-package com.ww.factory.abstractfactory;
+package com.ww.factory.abstractfactory.product;
 
 /**
- * @Description TODO
+ * @Description 苹果种类：抽象产品
  * @Author wanggw
  * @Date 2020/5/18 10:41
  */

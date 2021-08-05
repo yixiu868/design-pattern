@@ -1,7 +1,7 @@
-package com.ww.factory.abstractfactory;
+package com.ww.factory.abstractfactory.product;
 
 /**
- * @Description TODO
+ * @Description 香蕉种类：抽象产品
  * @Author wanggw
  * @Date 2020/5/18 10:42
  */
