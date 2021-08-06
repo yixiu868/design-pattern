@@ -1,4 +1,4 @@
-package com.ww.dynamic.proxy.cglib;
+package com.ww.proxy.dynamic.cglib;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * @Description TODO
+ * @Description 代理类实现
  * @Author wanggw
  * @Date 2020/5/11 10:23
  */

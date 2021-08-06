@@ -1,9 +1,9 @@
-package com.ww.dynamic.proxy.cglib;
+package com.ww.proxy.dynamic.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 
 /**
- * @Description TODO
+ * @Description 建立代理关系
  * @Author wanggw
  * @Date 2020/5/11 10:43
  */

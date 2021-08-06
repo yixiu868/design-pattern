@@ -1,4 +1,4 @@
-package com.ww.dynamic.proxy.java;
+package com.ww.proxy.dynamic.java;
 
 public class JavaDeveloper implements Developer {
 

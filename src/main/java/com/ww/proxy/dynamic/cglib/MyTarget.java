@@ -1,4 +1,4 @@
-package com.ww.dynamic.proxy.cglib;
+package com.ww.proxy.dynamic.cglib;
 
 /**
  * @Description CGLib代理类不能是final，代理的方法也不能是final（继承限制）
